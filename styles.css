@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0e7c7b;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+h1 {
+    color: #ffc107;
+    font-size: 50px; 
+    text-align: center; 
+    font-weight: bold; 
+    font-family: 'Pacifico', cursive;   
+}
+.game-info {
+    background-color: #124b52;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+input, button {
+    font-size: 1rem;
+    padding: 8px;
+    margin: 5px;
+}
+button {
+    cursor: pointer;
+    background-color: #ffc107;
+    color: #124b52;
+    border: none;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #e0a800;
+}
+#game-results {
+    margin-top: 20px;
+    font-size: 25px;
+    color: #ffffff;
+    font-family: 'Merriweather', serif;
+
+}
+h2 {
+    color: #ffc107;
+    margin-top: 20px;
+    text-align: center;
+}
+.card-display {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.card {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 8px;      
+    background-color: #f8f9fa;
+    font-size: 24px;         
+    font-weight: bold;
+    color: #333;            
+    width: 60px;            
+    height: 90px;            
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+#game-end-message{
+color: #fff;
+font-family: Verdana;
+font-size: 24px;
+}
+#player-info {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    gap: 15px; 
+    text-align: center; 
+    font-family: Georgia, serif;
+    font-size: 20px;
+}
+#player-info div {
+    width: 100%;
+    max-width: 300px; 
+}
+#player-info label {
+    display: block;
+    font-weight: bold; 
+    margin-bottom: 5px; 
+}
+#player-info input {
+    width: 100%; 
+    padding: 12px;
+    font-size: 16px; 
+    text-align: center; 
+    box-sizing: border-box; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+}
+#player-info input::placeholder {
+    font-size: 16px; 
+    color: #999;
+}
+footer {
+    width: 100%; 
+}
+.banner {
+    width: 20%;
+    height: auto;
+    margin-top: 20px;  
+    
+}
+#status p {
+    margin: 10px 0;            
+    font-size: 20px;           
+    color: #ffffff;                
+    font-family: 'Merriweather', serif;
+}
+#endgame-gif {
+    display: none;  
+}
+#endgame-gif img {
+    width: 200px;  
+    height: auto;
+}

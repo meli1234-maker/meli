@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seven and a half game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Seven and a Half</h1>
+        
+        <div id="player-info">
+            <div>
+                <label for="player-name">Name:</label>
+                <input type="text" id="player-name" placeholder="Your name">
+            </div>
+            <div>
+                <label for="player-money">Initial money:</label>
+                <input type="number" id="player-money" placeholder="€">
+            </div>
+            <div>
+                <button onclick="startGame()">Play!</button>
+            </div>
+        </div>
+        
+       
+        <div id="game-controls" style="display: none;">
+            <div id="status">
+                <p id="player-display"></p>
+                <p id="player-balance"></p>
+            </div>
+            <button id="new-round-btn" onclick="newRound()">New Round</button>
+            <button id="end-game-btn" onclick="endGame()">End game</button>
+            
+            <div id="betting" style="display: none;">
+                <label>Bet: <input type="number" id="player-bet"></label>
+                <button onclick="placeBet()">Bet</button>
+            </div>
+            
+            <div id="card-controls" style="display: none;">
+                <button onclick="drawCard()">New Card</button>
+                <button onclick="stand()">Stop</button>
+            </div>
+            
+            <div id="game-results"></div>
+        </div>
+        
+        <div id="card-table" style="display: none;">
+            <h2>Your cards</h2>
+            <div id="player-cards" class="card-display"></div>
+            
+            <h2>Dealer cards</h2>
+            <div id="dealer-cards" class="card-display"></div>
+        </div>
+        
+        
+        <div id="game-end-message"></div>
+        
+    </div>
+
+    <div id="endgame-gif" style="display: none;">
+        <img src="imatges/gif.gif" alt="Endgame GIF" id="endgame-gif-img">
+    </div>
+    
+    <footer id="game-footer" style="display: block;">
+        <img src="imatges/cartes.jpg" alt="Cartes Banner" class="banner">
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
